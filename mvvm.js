@@ -13,7 +13,6 @@ function hijack(data){
                 if(newVal===val) return
                 console.log('[hijack][set]->newVal:',newVal)
                 val=newVal
-
                 input.value=newVal
                 dispatchEvent.innerHTML=newVal
                 hijack(newVal)

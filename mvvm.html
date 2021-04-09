@@ -16,6 +16,7 @@
         let div=document.getElementById('div')
         let data={input:''}
         hijack(data,input)
+        
         data.input='双向绑定'
         input.oninput=function(e){
             data.input=e.target.value
